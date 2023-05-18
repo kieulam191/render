@@ -14,7 +14,7 @@ public class ResponseConfig {
 
     public ResponseEntity<?> reponse(List<User> user, int status) {
         HashMap<String, Object> hmap = new HashMap<String, Object>();
-        hmap.put("data: ", user);
+        hmap.put("data", user);
         hmap.put("status", status);
 
         return new ResponseEntity<HashMap<String, Object>>(hmap, HttpStatusCode.valueOf(status));
