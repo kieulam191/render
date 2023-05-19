@@ -2,6 +2,7 @@ D:\spring\docker\demo\src\main\java\com\example\demo\repository\UserRepository.j
 D:\spring\docker\demo\src\main\java\com\example\demo\entity\User.java
 D:\spring\docker\demo\src\main\java\com\example\demo\controller\HomeController.java
 D:\spring\docker\demo\src\main\java\com\example\demo\DemoApplication.java
+D:\spring\docker\demo\src\main\java\com\example\demo\config\DbConfig.java
 D:\spring\docker\demo\src\main\java\com\example\demo\controller\UserController.java
 D:\spring\docker\demo\src\main\java\com\example\demo\model\UserModel.java
 D:\spring\docker\demo\src\main\java\com\example\demo\service\ResponseConfig.java
