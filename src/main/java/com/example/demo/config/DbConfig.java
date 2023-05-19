@@ -20,10 +20,13 @@ public class DbConfig implements CommandLineRunner {
     }
 
     private void loadData() {
+        userRepository.deleteAll();
         if(userRepository.count() == 0)
         {
-            User user =new User(UUID.randomUUID().toString(), "Lam", 20);
-            userRepository.save(user);
+            User user1 =new User(UUID.randomUUID().toString(), 0, "Lam", 20);
+            User user2 =new User(UUID.randomUUID().toString(),1 ,"Ngoc", 20);
+            userRepository.save(user1);
+            userRepository.save(user2);
         }
     }
 }

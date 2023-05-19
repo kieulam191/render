@@ -9,6 +9,6 @@ public class HomeController {
 
     @GetMapping("/")
     public String index() {
-        return "GET api/user";
+        return "GET api/users";
     }
 }
