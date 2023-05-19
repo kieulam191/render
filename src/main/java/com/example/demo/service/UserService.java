@@ -22,7 +22,8 @@ public class UserService {
     ResponseConfig responseConfig;
 
     public ResponseEntity<List<HashMap<String, Objects>>> getAllUser() {
-        ResponseEntity<List<User>> users = userRepository.getAllUser();
+        List<User> userList = userRepository.findAll();
+        ResponseEntity<List<User>> users = new ResponseEntity<>(userList, HttpStatus.OK);
 
         if(users.getStatusCode() == HttpStatus.OK){
             return (ResponseEntity<List<HashMap<String, Objects>>>)

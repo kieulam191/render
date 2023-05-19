@@ -3,6 +3,7 @@ package com.example.demo.controller;
 
 import com.example.demo.entity.User;
 import com.example.demo.model.UserModel;
+import com.example.demo.repository.UserRepository;
 import com.example.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +19,8 @@ public class UserController {
 
     @Autowired
     UserService userService;
+
+
 
 
 
